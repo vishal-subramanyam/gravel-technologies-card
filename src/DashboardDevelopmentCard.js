@@ -40,7 +40,7 @@ const DashboardDevelopmentCard = ({arcInfo, arcParams, hoursWorked, hoursRemaini
           <Grid item xs={4} style={{ display: 'flex', alignItems: 'flex-start', height: '200px' }}>
             <div style={{ marginTop: '20px', width: '100%', height: '100%' }}>
               <Doughnut data={arcInfo} options={arcParams} />
-              <Typography variant="h6" component="div" align='center' style={{position: 'relative', marginTop: '-6rem', fontWeight: 'bold', fontSize: '2rem'}}>
+              <Typography variant="h6" component="div" align='center' style={{position: 'relative', marginTop: '-3.25rem', fontWeight: 'bold', fontSize: '1.5rem'}}>
                 {(hoursWorked / (hoursWorked + hoursRemaining) * 100).toFixed(0)}%
               </Typography>
               <Typography variant="h6" component="div" align='center' style={{color: 'gray', fontSize: '1rem'}}>
@@ -49,7 +49,7 @@ const DashboardDevelopmentCard = ({arcInfo, arcParams, hoursWorked, hoursRemaini
             </div>
           </Grid>
           <Grid item xs={8}>
-            <div style={{ height: '400px' }}>
+            <div style={{ height: '200px', width: '200px' }}>
               <Bar data={barInfo} options={barParams} />
             </div>
           </Grid>
